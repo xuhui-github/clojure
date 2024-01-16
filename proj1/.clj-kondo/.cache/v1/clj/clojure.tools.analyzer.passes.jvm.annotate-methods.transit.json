@@ -1,0 +1,1 @@
+["^ ","~$annotate-methods",["^ ","~:row",19,"~:col",1,"~:fixed-arities",["~#set",[1]],"~:name","^0","~:ns","~$clojure.tools.analyzer.passes.jvm.annotate-methods","~:top-ns","^7"],"~:filename","/home/xuhui/.m2/repository/org/clojure/tools.analyzer.jvm/0.6.5/tools.analyzer.jvm-0.6.5.jar:clojure/tools/analyzer/passes/jvm/annotate_methods.clj"]

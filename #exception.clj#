@@ -1,0 +1,43 @@
+(defn average [numbers]
+  (let [ total  (apply + numbers)]
+    (/ total (count numbers))))
+
+
+(try
+  (average [])
+  (catch ArithmeticException e
+    (println "Divied by zero!")
+    0))
+
+(defn safe-average [numbers]
+  (let [ total (apply + numbers)]
+    (try
+         (/ total (count numbers))
+         (catch ArithmeticException e
+           (println "Diveded by zero!")
+                    0))))
+
+
+
+
+(safe-average [])
+
+
+(try
+     (print "Attempting division...")
+     (/ 1 0)
+     (catch RuntimeException e "Runtime exception!")
+     (catch ArithmeticException e "Divied by zero!")
+     (catch Throwable e "Unknown exception encountered!")
+     (finally 
+              (println "done.")))
+
+
+(try 
+     (print "Attempting division...")
+     (/ 1 0)
+     (finally 
+              (println "done.")))
+(throw (Exception. "this is an error."))
+
+(defn
