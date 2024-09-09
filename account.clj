@@ -1,4 +1,4 @@
-  
+
 (def account-a (ref 10000))
 (def account-b (ref 2000))
 
@@ -17,3 +17,15 @@
 (future (mov account-a account-b 50))
 @started
 (dosync (ref-set account-a 20))
+
+(import java.util.ArrayList)
+(def lst (new java.util.ArrayList))
+(.size lst)
+(.add lst "first")
+(.add lst "second")
+(println (.size lst))
+(import java.util.LinkedList)
+(new LinkedList)
+
+
+

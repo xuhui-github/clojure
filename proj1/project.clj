@@ -6,6 +6,7 @@
   :dependencies [[org.clojure/clojure "1.10.3"]
                  [mysql/mysql-connector-java "5.1.44"]
                  [org.clojure/java.jdbc "0.3.3"]
+                 [clj-highlight/clj-highlight  "0.1.1-SNAPSHOT"]
                  [org.clojure/clojure-contrib "1.2.0"]
                  [org.clojure/core.match "0.3.0-alpha4"]
                  [revise "0.0.6"]]

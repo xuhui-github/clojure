@@ -1,11 +1,6 @@
-(defn my-sum [f,g]
-  {:pre [(integer? f), (integer? g)]
-   :post [(string? %)]
-   }
-  (str "Result:" (+ f g))
-  )
 
-(my-sum 10 23)
+
+
 
 (defn max3 [a b c]
   (cond (and (> a b) (> a c)) a
@@ -29,5 +24,3 @@
 (:x f)
 (:y f)
 (:z f)
-f
-

@@ -1,0 +1,1 @@
+["^ ","~$foo",["^ ","~:row",3,"~:col",1,"~:fixed-arities",["~#set",[1]],"~:name","^0","~:ns","~$ch03-hello-compiler.core","~:top-ns","^7"],"~:filename","/home/xuhui/clojure/ch03-hello-compiler/src/ch03_hello_compiler/core.clj"]
