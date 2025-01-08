@@ -1,5 +1,6 @@
 (map inc '(1 2 3))
 
+
 (filter odd? '(2 3 4 5 6 7 8))
 
 (every? odd? '(1 2 3 4))
@@ -14,3 +15,6 @@
      )
 
 (dorun (for))
+
+
+ 

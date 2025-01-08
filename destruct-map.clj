@@ -18,11 +18,11 @@
       ca [ c a]]
   (let [xyz (sort  (vals abc))
         {[_ y z] :xyz} {:xyz xyz}]
-    (format "Y = %s Z = %s" y z))
+    (format "Y = %s Z = %s" y z)))
 
   (let [abc [:A :B :C]
         [a & bc] abc
         [_ _ c] abc]
-    (format "A = %s BC = s C = %s" a bc c))
+    (format "A = %s BC = %s C = %s" a bc c))
 
-  
+(printf "......\n")  

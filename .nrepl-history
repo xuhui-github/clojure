@@ -1,0 +1,13 @@
+(def a 21)
+a
+'(1 2 3)
+:repl/help
+:repl/toggle-color
+'(1)
+:repl/set-color-theme :dark-screen-theme
+:repl/toggle-color
+:repl/key-bindings
+(doseq [item '(1 2 4)]
+ (prn item))
+(print "你好")
+(exit)

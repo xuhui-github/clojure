@@ -1,0 +1,8 @@
+(vector? (do
+            (def x y) ;;local variable x
+        (def y 20) ;;local variable y
+  (+ x y)
+  [ x y ]))
+
+
+

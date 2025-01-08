@@ -6,3 +6,4 @@
 a 
 (reset! a (inc @a))
 (swap! a inc)
+(print "hello")
