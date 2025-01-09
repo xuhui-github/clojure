@@ -63,3 +63,6 @@
 
 (def make-list03 #(cons %1 (cons %2 %&)))
 (make-list03 1 2 3 4 5 6 7 8 9)
+
+
+(defn 

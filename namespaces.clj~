@@ -1,0 +1,5 @@
+(ns joy.ch2)
+
+(defn hello []
+  (println "Hello Cleverland"))
+
