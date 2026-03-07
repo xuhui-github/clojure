@@ -1,4 +1,4 @@
-defn foo [p]
+(defn foo [p]
   (prn 
     (str "Hello " p "!")
     )
@@ -15,3 +15,9 @@ defn foo [p]
   )
 (foo1 'xuhui')
 
+(defn mymax [ a b ]
+  (if (> a b)
+    a
+    b))
+
+(mymax 1 2)

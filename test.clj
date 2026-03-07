@@ -1,3 +1,4 @@
-(def test []
+(defn test []
   (println "Test")
   )
+
