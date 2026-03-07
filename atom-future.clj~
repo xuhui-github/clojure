@@ -11,4 +11,3 @@
          (swap! foo #(conj % 2))
          )
 @foo
-
