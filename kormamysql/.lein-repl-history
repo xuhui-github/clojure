@@ -1,0 +1,11 @@
+(use 'korma.core)
+(defdb db (postgres {:db "northwind"
+                     :user "xuhui"
+                     :password "flower"})
+)
+(defdb db (postgres {:db "northwind"
+:user "xuhui"
+:password "flower"}))
+(use 'korma.core)
+(defentity users)
+(select users)

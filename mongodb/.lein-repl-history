@@ -1,0 +1,25 @@
+(ns my-mongo-app
+(:require [somnium.congomongo :as m]))
+(m/make-connection "mydb"
+:instances [{:host "127.0.0.1" :port 27017}]))
+#'user/conn
+(def conn
+  (m/make-connection "mydb"
+                     :instances [{:host "127.0.0.1" :port 27017}]))
+#user/conn
+;
+;'
+#'user/conn
+conn
+(def conn
+  (m/make-connection "mongodb://127.0.0.1/mydb"))
+conn
+(m/set-connection! conn)
+(m/with-mongo conn
+  (m/insert! :robot {:name "robby"}))
+(m/close-connection conn)
+exit
+ls
+(doc m)
+(class m)
+(help mongodb)

@@ -1,0 +1,111 @@
+(require '[clojure.core.match :refer [match]])
+(doseq [n (range 1 21)]
+  (println
+    (match [(mod n 3) (mod n 5)]
+      [0 0] "FizzBuzz"
+      [0 _] "Fizz"
+      [_ 0] "Buzz"
+      :else n)))
+(let [ x 1 y 2 z 3]
+  (match [ x y z]
+    [1 2 b] [:a0 b]
+    [a 2 3] [:a1 a]))
+(match ['foobar]
+  ['foobar] :bar
+  ['bazqux] :qux)
+(let [a (+  1 1)]
+   (match [99]
+     [a] :success
+     :else :fail))
+(match [ [:a :b :c]]
+  [[:a :b _]] :success
+  :else :fail)
+(quit)
+[match [{:a 1 :b 2 :c 3 :d 4}]
+  [{:a _ :b 2}] "map default to partial matching"
+  :else :fail)
+[match [{:a 1 :b 2 :c 3 :d 4}]
+  [{:a _ :b 2}] "map default to partial matching"
+  :else :fail)
+(defmulti foo :some-key)
+(defmethod foo :a [this] (str "foo :a given " this)
+)
+(defmethod foo :b [this] (str "foo :b given " this))
+(defmethod foo :c [this] (str "foo :c given " this))
+(foo {:some-key :a)
+(foo {:some-key :a})
+(foo {:some-key :b})
+(foo {:some-key :b })
+(foo {:some-key :c })
+(defmulti foo :some-key)
+(defmulti foo :a [this] (prn "A"))
+(def method foo :default [this]
+  (prn (str "Sorry, no idea what to do with '"(:some-key this)"' ?")))
+(foo {:some-key :a})
+(defmethod foo :a[this] (prn "A"))
+(foo {:some-key :a})
+(exit)
+(def later (delay (prn "hello")))
+@later
+(def d (delay (prn "hello")))
+@d
+(force d)
+(def d (delay (prn "hello")))
+(force d)
+(def foo (promise))
+(future
+  (prn "child thread doing stuff...")
+  (Thread/sleep 10000)
+  (deliver foo :bar))
+@foo
+(def f (future 
+   (Thread/sleep 10000)
+   (println "done")
+   100))
+(def f )
+@f
+(force f)
+(deref f 500 "fail")
+(def counter (atom 0))
+(swap! counter inc)
+@counter
+(swap! counter inc)
+@counter
+(swap! counter #(+ 2 %))
+@counter
+(exit)
+(print "hello")
+'(1 2 3)
+(import clj-highlight)
+(use 'clj-highlight.core)
+(print "hello")
+(use 'clj-highlight.mangler)
+(print "hello")
+(def ct (tokenizer clj-syntax))
+(clj-highlight.core/highligter)
+(use 'clj-highlight.core/highligter)
+(clj-highlight.core/highligter)
+(import 'clj-highlight.core/highligter)
+(import clj-highlight.core/highligter)
+(clojure.core/refer  clj-highlight.core/highligter)
+(defn mymax [ a b ]
+  (if (> a b)
+      a
+  b))
+(mymax 1 2)
+(doc mymax)
+(require 'clj-highlight)
+(use 'clj-highlight.core)
+(use 'clj-highlight.mangler )
+(defn 
+(defn
+(use 'clj-highlight.core)
+(clj-highlight.core)
+(use 'clj-highlight.core)
+(main)
+(-main)
+(source -main)
+(-main)
+(doc main)
+(defn 
+(-main)

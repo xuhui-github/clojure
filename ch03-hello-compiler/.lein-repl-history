@@ -1,0 +1,5 @@
+(require 'cljs.closure)
+(cljs.closure/build "src/cljs"
+  {:output-to "resources/public/hello.js"
+   :optimizations :advanced})
+(cljs.closure/build source options-map)
