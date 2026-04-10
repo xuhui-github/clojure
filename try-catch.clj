@@ -15,3 +15,10 @@
 ;;(try
 ;;  (throw (Error. "I done throwed in CLJS"))
 ;;  (catch js/Error "I done catched in CLJS"))
+(defn mymax [a b]
+  (if (> a b)
+    a
+    b))
+
+(mymax 111 222)
+

@@ -1,4 +1,3 @@
-
 (import java.util.ArrayList)
 (for [element '(:a :b :c)]
   (prn (str (name element) "!")))
@@ -15,6 +14,7 @@
         '()
         :else
         (cons (first ls) (mystery (next ls)))))
+
 (mystery '(1 2 3 4))
 
 (defn remove-lst [item ls]
@@ -43,7 +43,6 @@
             (exists-list item (next ls)))))
 
 (exists-list 2 '(1 3 4 5 2))
-
 
 
 

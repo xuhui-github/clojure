@@ -1,4 +1,4 @@
-x
+
 
 (def account-a (ref 10000))
 (def account-b (ref 2000))
